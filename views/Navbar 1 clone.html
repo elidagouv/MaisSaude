@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar by frontend-joe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="/style/navbarclone.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <button onclick="toggleMenu()" class="burger"></button>
+        <button class="button">Home</button>
+        <div class="dropdowns">
+            <div class="dropdown">
+                <button class="button">
+                    Serviços
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 15.375L6 9.375L7.075 8.3L12 13.25L16.925 8.325L18 9.4L12 15.375Z" fill="#F9F9F9" />
+                    </svg>
+                </button>
+                <div class="dropdown-menu">
+                    <button>UX/UI Design</button>
+                    <button>Aplicações Web</button>
+                    <button>SEO Advice</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="button">Produtos
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 15.375L6 9.375L7.075 8.3L12 13.25L16.925 8.325L18 9.4L12 15.375Z" fill="#F9F9F9" />
+                    </svg>
+                </button>
+                <div class="dropdown-menu">
+                    <button>Learn CSS Ebook</button>
+                    <button>Security Course</button>
+                    <button>Masterclass Bundle</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="button">
+                    Support
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 15.375L6 9.375L7.075 8.3L12 13.25L16.925 8.325L18 9.4L12 15.375Z" fill="#F9F9F9" />
+                    </svg>
+                </button>
+                <div class="dropdown-menu">
+                    <button> Live Chat</button>
+                    <button>Envie um Email</button>
+                    <button>Ajuda!</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+</body>
+</html>
